@@ -27,8 +27,8 @@
   <link rel="icon" href="../../assets/img/4ngo-favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../../assets/img/4ngo-favicon-180.png">
   <link rel="preload" href="../../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../../assets/css/fonts.css">
-  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/fonts.css?v=ed618771">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=4fadae23">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -86,6 +86,6 @@
   </div>
   <div class="wrap rights"><p><a href="https://www.dei4bg.org/" target="_blank" rel="noopener">© 2026 Association “Education for Democracy”. All rights reserved.<span class="sr-only"> (opens in a new tab)</span></a></p></div>
 </footer>
-<script>(function(){var d=document.querySelector('.lang-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus()}})})();</script>
+<script>(function(){var d=document.querySelector('.lang-menu');if(!d)return;var s=d.querySelector('summary');function close(){if(d.open)d.open=false}document.addEventListener('pointerdown',function(e){if(!d.contains(e.target))close()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){close();s.focus()}});d.addEventListener('focusout',function(e){if(e.relatedTarget&&!d.contains(e.relatedTarget))close()});window.addEventListener('pageshow',close)})();</script>
 </body>
 </html>

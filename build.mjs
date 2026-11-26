@@ -1,6 +1,12 @@
 // Генерира статичните страници на 4ngo.eu за всеки език от src/i18n/*.json.
 // Употреба: node build.mjs
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+
+// Версия на CSS по съдържанието, за да не остава стар файл в кеша след промяна
+const ver = (f) => createHash('sha1').update(readFileSync(f)).digest('hex').slice(0, 8);
+const V_STYLE = ver('assets/css/style.css');
+const V_FONTS = ver('assets/css/fonts.css');
 
 const SITE = 'https://4ngo.eu';
 // Редът е протоколният ред на ЕС (по името на езика на самия него):
@@ -48,7 +54,7 @@ const rel = (p) => R + p.replace(/^\//, '');
 const GLOBE = `<svg class="globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>`;
 const CHEVRON = `<svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>`;
 // Затваря езиковото меню при клик извън него и при Escape
-const MENU_JS = `<script>(function(){var d=document.querySelector('.lang-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus()}})})();</script>`;
+const MENU_JS = `<script>(function(){var d=document.querySelector('.lang-menu');if(!d)return;var s=d.querySelector('summary');function close(){if(d.open)d.open=false}document.addEventListener('pointerdown',function(e){if(!d.contains(e.target))close()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){close();s.focus()}});d.addEventListener('focusout',function(e){if(e.relatedTarget&&!d.contains(e.relatedTarget))close()});window.addEventListener('pageshow',close)})();</script>`;
 
 const pagePath = (lang, page) => `/${lang}/${page === 'privacy' ? 'privacy/' : ''}`;
 
@@ -81,8 +87,8 @@ function head(t, page) {
   <link rel="icon" href="${R}assets/img/4ngo-favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="${R}assets/img/4ngo-favicon-180.png">
   <link rel="preload" href="${R}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${R}assets/css/fonts.css">
-  <link rel="stylesheet" href="${R}assets/css/style.css">
+  <link rel="stylesheet" href="${R}assets/css/fonts.css?v=${V_FONTS}">
+  <link rel="stylesheet" href="${R}assets/css/style.css?v=${V_STYLE}">
 </head>`;
 }
 

@@ -49,16 +49,17 @@ section[id] { scroll-margin-top: 80px; }
 .menu a { text-decoration: none; font-weight: 500; color: var(--navy); }
 .menu a:hover { color: var(--rust); }
 .lang-menu { position: relative; flex: none; }
-.lang-menu summary { list-style: none; display: flex; align-items: center; gap: 6px; padding: 8px 12px; border: 1px solid #D6DAE5; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--navy); user-select: none; }
+.lang-menu summary { -webkit-tap-highlight-color: transparent; -webkit-user-select: none; list-style: none; display: flex; align-items: center; gap: 6px; padding: 8px 12px; border: 1px solid #D6DAE5; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--navy); user-select: none; }
 .lang-menu summary::-webkit-details-marker { display: none; }
-.lang-menu summary:hover, .lang-menu[open] summary { border-color: var(--navy); }
+.lang-menu[open] summary { border-color: var(--navy); }
+@media (hover: hover) { .lang-menu summary:hover { border-color: var(--navy); } .lang-panel a:not([aria-current]):hover { background: var(--bg); } }
 .lang-menu svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .lang-menu .chev { width: 16px; height: 16px; transition: transform .15s; }
 .lang-menu[open] .chev { transform: rotate(180deg); }
+.lang-menu:not([open]) .lang-panel { display: none; }
 .lang-panel { position: absolute; right: 0; top: calc(100% + 8px); min-width: 240px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 32px rgba(27,43,94,.14); padding: 8px; z-index: 60; }
 .lang-panel ul { list-style: none; margin: 0; padding: 0; }
 .lang-panel a { display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 9px; text-decoration: none; color: var(--navy); font-weight: 500; }
-.lang-panel a:hover { background: var(--bg); }
 .lang-panel a[aria-current="true"] { background: var(--navy); color: #fff; }
 .lang-panel .code { width: 26px; font-size: 12px; font-weight: 700; opacity: .7; }
 .lang-panel .soon { margin: 6px 4px 2px; padding: 10px 8px 4px; border-top: 1px solid var(--line); font-size: 12.5px; line-height: 1.45; color: #6B7490; }
