@@ -39,6 +39,9 @@ const EMAIL = 'hello@4ngo.eu';
 
 const HERO_ART = `<svg class="hero-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect x="4" y="4" width="112" height="112" rx="28" fill="rgba(255,255,255,.06)"/><g stroke="rgba(255,255,255,.35)" stroke-width="4" stroke-linecap="round"><line x1="72" y1="26" x2="30" y2="74"/><line x1="30" y1="74" x2="92" y2="74"/><line x1="72" y1="26" x2="72" y2="96"/></g><g fill="rgba(255,255,255,.5)"><circle cx="72" cy="26" r="7"/><circle cx="30" cy="74" r="7"/><circle cx="92" cy="74" r="7"/><circle cx="72" cy="96" r="7"/></g><circle cx="72" cy="74" r="9" fill="#F2994A"/></svg>`;
 
+// Относителен префикс до корена, за да работи и на github.io, и на 4ngo.eu
+let R = './';
+const rel = (p) => R + p.replace(/^\//, '');
 const pagePath = (lang, page) => `/${lang}/${page === 'privacy' ? 'privacy/' : ''}`;
 
 function head(t, page) {
@@ -66,20 +69,20 @@ function head(t, page) {
   <meta property="og:image" content="${SITE}/assets/img/og-image.png">
   <meta property="og:locale" content="${t.lang}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/assets/img/4ngo-favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/img/4ngo-favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/img/4ngo-favicon-180.png">
-  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/fonts.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="${R}assets/img/4ngo-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="${R}assets/img/4ngo-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="${R}assets/img/4ngo-favicon-180.png">
+  <link rel="preload" href="${R}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="${R}assets/css/fonts.css">
+  <link rel="stylesheet" href="${R}assets/css/style.css">
 </head>`;
 }
 
 function header(t, page) {
-  const home = `/${t.lang}/`;
+  const home = rel(`/${t.lang}/`);
   const langs = LANGS.map((l) => {
     const cur = l === t.lang;
-    return `<li><a href="${pagePath(l, page)}" hreflang="${l}" lang="${l}" title="${esc(T[l].label)}"${cur ? ' aria-current="true"' : ''}>${l.toUpperCase()}<span class="sr-only"> – ${esc(T[l].label)}</span></a></li>`;
+    return `<li><a href="${rel(pagePath(l, page))}" hreflang="${l}" lang="${l}" title="${esc(T[l].label)}"${cur ? ' aria-current="true"' : ''}>${l.toUpperCase()}<span class="sr-only"> – ${esc(T[l].label)}</span></a></li>`;
   }).join('');
   const menu = page === 'home'
     ? `<nav aria-label="${esc(t.a11y.menu)}"><ul class="menu">
@@ -93,7 +96,7 @@ function header(t, page) {
 <a class="skip" href="#main">${esc(t.a11y.skip)}</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="logo" href="${home}"><img src="/assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></a>
+    <a class="logo" href="${home}"><img src="${R}assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></a>
     ${menu}
     <nav aria-label="${esc(t.a11y.language)}"><ul class="lang">${langs}<li class="more" title="${esc(t.moreLanguages)}">${esc(t.moreLanguagesShort)}</li></ul></nav>
   </div>
@@ -108,12 +111,12 @@ function footer(t) {
   return `<footer class="site-footer">
   <div class="wrap foot">
     <div class="initiative">
-      <img src="/assets/img/prosveta-navy.png" alt="" width="44" height="48">
+      <img src="${R}assets/img/prosveta-navy.png" alt="" width="44" height="48">
       <p>${esc(t.footer.initiative)} <b>${esc(t.footer.org)}</b>, ${esc(t.footer.country)}</p>
     </div>
     <div class="foot-links">
       <ul class="foot-social" aria-label="${esc(t.a11y.social)}">${social}</ul>
-      <a href="/${t.lang}/privacy/">${esc(t.footer.privacy)}</a>
+      <a href="${R}${t.lang}/privacy/">${esc(t.footer.privacy)}</a>
       <span>© 2026 4ngo</span>
     </div>
   </div>
@@ -130,7 +133,7 @@ function home(t) {
     { key: 'portal', cls: 'd-portal', img: 'portal4ngo-mark.svg', sub: 'portal' },
     { key: 'hub', cls: 'd-hub', img: 'hub4ngo-mark.svg', sub: 'hub' },
   ].map((d) => `<li class="door">
-          <img src="/assets/img/${d.img}" alt="" width="56" height="56">
+          <img src="${R}assets/img/${d.img}" alt="" width="56" height="56">
           <h3 class="domain ${d.cls}">${d.sub ? `<span>${d.sub}</span>` : ''}4ngo.eu</h3>
           <p><b>${esc(e[d.key].verb)}</b> ${esc(e[d.key].text)}</p>
           <span class="status${d.here ? ' here' : ''}">${esc(e[d.key].status)}</span>
@@ -228,14 +231,14 @@ ${header(t, 'privacy')}
     <h1>${esc(p.title)}</h1>
     <p class="updated">${esc(p.updated)}</p>
     ${body}
-    <a class="back" href="/${t.lang}/">← ${esc(p.back)}</a>
+    <a class="back" href="${R}${t.lang}/">← ${esc(p.back)}</a>
   </div>
 </main>
 ${footer(t)}`;
 }
 
 function rootRedirect() {
-  const links = LANGS.map((l) => `<li><a href="/${l}/" hreflang="${l}" lang="${l}">${esc(T[l].label)}</a></li>`).join('');
+  const links = LANGS.map((l) => `<li><a href="${l}/" hreflang="${l}" lang="${l}">${esc(T[l].label)}</a></li>`).join('');
   const alternates = LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}/${l}/">`).join('\n  ');
   return `<!doctype html>
 <html lang="${DEFAULT_LANG}">
@@ -247,7 +250,7 @@ function rootRedirect() {
   <link rel="canonical" href="${SITE}/">
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${SITE}/">
-  <link rel="icon" href="/assets/img/4ngo-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="${R}assets/img/4ngo-favicon.svg" type="image/svg+xml">
   <script>
     (function () {
       var supported = ${JSON.stringify(LANGS)};
@@ -257,10 +260,10 @@ function rootRedirect() {
         var code = String(prefs[i]).toLowerCase().split('-')[0];
         if (supported.indexOf(code) !== -1) { pick = code; break; }
       }
-      location.replace('/' + pick + '/');
+      location.replace(pick + '/');
     })();
   </script>
-  <noscript><meta http-equiv="refresh" content="0; url=/${DEFAULT_LANG}/"></noscript>
+  <noscript><meta http-equiv="refresh" content="0; url=${DEFAULT_LANG}/"></noscript>
   <style>body{font-family:system-ui,sans-serif;background:#F6F7FA;color:#1B2B5E;display:grid;place-items:center;min-height:100vh;margin:0}ul{list-style:none;padding:0;display:flex;gap:16px}a{color:#1B2B5E;font-weight:600}</style>
 </head>
 <body>
@@ -277,10 +280,14 @@ function write(path, html) {
 }
 
 for (const l of LANGS) {
+  R = '../';
   write(`${l}/index.html`, home(T[l]));
+  R = '../../';
   write(`${l}/privacy/index.html`, privacy(T[l]));
 }
+R = './';
 write('index.html', rootRedirect());
+write('.nojekyll', '');
 
 const urls = LANGS.flatMap((l) => [pagePath(l, 'home'), pagePath(l, 'privacy')]);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>

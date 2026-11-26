@@ -32,6 +32,14 @@ sitemap.xml robots.txt
 2. Добавете кода в `LANGS` в `build.mjs`.
 3. Изпълнете `node build.mjs`.
 
+## Публикуване (GitHub Pages)
+
+Сайтът се публикува от клон `main`, от корена на хранилището (Settings → Pages → Deploy from a branch → `main` / `/ (root)`).
+Всички пътища са относителни, затова сайтът работи и на `4ngoeu.github.io/site4ngo/`, и на собствен домейн.
+
+За домейна 4ngo.eu: в Settings → Pages → Custom domain въведете `4ngo.eu` и насочете DNS записите към GitHub Pages
+(A записи към 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153). След това включете Enforce HTTPS.
+
 ## Преглед локално
 
 ```bash

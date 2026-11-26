@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="de" href="https://4ngo.eu/de/">
   <link rel="alternate" hreflang="bg" href="https://4ngo.eu/bg/">
   <link rel="alternate" hreflang="x-default" href="https://4ngo.eu/">
-  <link rel="icon" href="/assets/img/4ngo-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/img/4ngo-favicon.svg" type="image/svg+xml">
   <script>
     (function () {
       var supported = ["en","fr","de","bg"];
@@ -21,13 +21,13 @@
         var code = String(prefs[i]).toLowerCase().split('-')[0];
         if (supported.indexOf(code) !== -1) { pick = code; break; }
       }
-      location.replace('/' + pick + '/');
+      location.replace(pick + '/');
     })();
   </script>
-  <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
+  <noscript><meta http-equiv="refresh" content="0; url=en/"></noscript>
   <style>body{font-family:system-ui,sans-serif;background:#F6F7FA;color:#1B2B5E;display:grid;place-items:center;min-height:100vh;margin:0}ul{list-style:none;padding:0;display:flex;gap:16px}a{color:#1B2B5E;font-weight:600}</style>
 </head>
 <body>
-  <ul><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/bg/" hreflang="bg" lang="bg">Български</a></li></ul>
+  <ul><li><a href="en/" hreflang="en" lang="en">English</a></li><li><a href="fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="bg/" hreflang="bg" lang="bg">Български</a></li></ul>
 </body>
 </html>
