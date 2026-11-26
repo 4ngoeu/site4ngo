@@ -45,6 +45,11 @@ const HERO_ART = `<svg class="hero-art" viewBox="0 0 120 120" aria-hidden="true"
 // Относителен префикс до корена, за да работи и на github.io, и на 4ngo.eu
 let R = './';
 const rel = (p) => R + p.replace(/^\//, '');
+const GLOBE = `<svg class="globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>`;
+const CHEVRON = `<svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>`;
+// Затваря езиковото меню при клик извън него и при Escape
+const MENU_JS = `<script>(function(){var d=document.querySelector('.lang-menu');if(!d)return;document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;d.querySelector('summary').focus()}})})();</script>`;
+
 const pagePath = (lang, page) => `/${lang}/${page === 'privacy' ? 'privacy/' : ''}`;
 
 function head(t, page) {
@@ -85,8 +90,8 @@ function header(t, page) {
   const home = rel(`/${t.lang}/`);
   const langs = LANGS.map((l) => {
     const cur = l === t.lang;
-    return `<li><a href="${rel(pagePath(l, page))}" hreflang="${l}" lang="${l}" title="${esc(T[l].label)}"${cur ? ' aria-current="true"' : ''}>${l.toUpperCase()}<span class="sr-only"> – ${esc(T[l].label)}</span></a></li>`;
-  }).join('');
+    return `<li><a href="${rel(pagePath(l, page))}" hreflang="${l}" lang="${l}"${cur ? ' aria-current="true"' : ''}><span class="code">${l.toUpperCase()}</span>${esc(T[l].label)}</a></li>`;
+  }).join('\n          ');
   const menu = page === 'home'
     ? `<nav aria-label="${esc(t.a11y.menu)}"><ul class="menu">
         <li><a href="#about">${esc(t.nav.about)}</a></li>
@@ -99,11 +104,18 @@ function header(t, page) {
 <a class="skip" href="#main">${esc(t.a11y.skip)}</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="logo" href="${home}"><picture><source media="(max-width: 420px)" srcset="${R}assets/img/4ngo-mark.svg"><img src="${R}assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></picture></a>
+    <a class="logo" href="${home}"><img src="${R}assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></a>
     ${menu}
-    <nav aria-label="${esc(t.a11y.language)}"><ul class="lang">${langs}<li class="more" title="${esc(t.moreLanguages)}">${esc(t.moreLanguagesShort)}</li></ul></nav>
+    <details class="lang-menu">
+      <summary aria-label="${esc(t.a11y.language)}: ${esc(t.label)}">${GLOBE}<span>${t.lang.toUpperCase()}</span>${CHEVRON}</summary>
+      <nav class="lang-panel" aria-label="${esc(t.a11y.language)}">
+        <ul>
+          ${langs}
+        </ul>
+        <p class="soon">${esc(t.moreLanguages)}</p>
+      </nav>
+    </details>
   </div>
-  <p class="more-note">${esc(t.moreLanguages)}</p>
 </header>`;
 }
 
@@ -125,6 +137,7 @@ function footer(t) {
   </div>
   <div class="wrap rights"><p><a href="${ORG_URL}" target="_blank" rel="noopener">${esc(t.footer.rights)}<span class="sr-only"> ${esc(t.a11y.newTab)}</span></a></p></div>
 </footer>
+${MENU_JS}
 </body>
 </html>
 `;
