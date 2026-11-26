@@ -134,5 +134,11 @@
         "p": "Conformément au Règlement général sur la protection des données (RGPD), vous disposez d’un droit d’accès, de rectification et d’effacement, ainsi que du droit d’introduire une réclamation auprès d’une autorité de protection des données."
       }
     ]
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous cherchez n’existe pas ou a été déplacée. Le site est en construction et certaines adresses peuvent changer.",
+    "home": "Aller à l’accueil",
+    "choose": "Choisissez une langue"
   }
 }

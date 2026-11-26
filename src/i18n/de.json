@@ -134,5 +134,11 @@
         "p": "Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung und Löschung sowie das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde."
       }
     ]
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben. Die Website befindet sich im Aufbau, einige Adressen können sich ändern.",
+    "home": "Zur Startseite",
+    "choose": "Sprache wählen"
   }
 }

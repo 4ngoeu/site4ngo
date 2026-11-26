@@ -13,7 +13,12 @@
     "social": "Redes sociales",
     "newTab": "(se abre en una pestaña nueva)"
   },
-  "nav": { "about": "Quiénes somos", "ecosystem": "El ecosistema", "how": "Cómo funciona", "contact": "Contacto" },
+  "nav": {
+    "about": "Quiénes somos",
+    "ecosystem": "El ecosistema",
+    "how": "Cómo funciona",
+    "contact": "Contacto"
+  },
   "moreLanguages": "Pronto llegarán las demás lenguas oficiales de la UE",
   "moreLanguagesShort": "+ más idiomas pronto",
   "hero": {
@@ -31,27 +36,60 @@
   "ecosystem": {
     "eyebrow": "El ecosistema",
     "title": "Un ecosistema. Tres puertas.",
-    "brand": { "verb": "Cuenta.", "text": "Quiénes somos, misión, noticias e incidencia.", "status": "Estás aquí" },
-    "portal": { "verb": "Informa.", "text": "Un directorio de ONG de la UE, convocatorias y guías.", "status": "Próximamente" },
-    "hub": { "verb": "Conecta.", "text": "Búsqueda de socios, grupos temáticos, formación.", "status": "Próximamente" }
+    "brand": {
+      "verb": "Cuenta.",
+      "text": "Quiénes somos, misión, noticias e incidencia.",
+      "status": "Estás aquí"
+    },
+    "portal": {
+      "verb": "Informa.",
+      "text": "Un directorio de ONG de la UE, convocatorias y guías.",
+      "status": "Próximamente"
+    },
+    "hub": {
+      "verb": "Conecta.",
+      "text": "Búsqueda de socios, grupos temáticos, formación.",
+      "status": "Próximamente"
+    }
   },
   "how": {
     "eyebrow": "El camino de una organización",
     "title": "Infórmate. Conéctate. Actúa.",
     "steps": [
-      { "title": "Infórmate", "text": "Encuentra la convocatoria y la guía adecuadas en portal4ngo." },
-      { "title": "Conéctate", "text": "Busca socios en hub4ngo y forma un consorcio." },
-      { "title": "Actúa", "text": "Presenta la candidatura, ejecuta el proyecto y comparte los resultados." }
+      {
+        "title": "Infórmate",
+        "text": "Encuentra la convocatoria y la guía adecuadas en portal4ngo."
+      },
+      {
+        "title": "Conéctate",
+        "text": "Busca socios en hub4ngo y forma un consorcio."
+      },
+      {
+        "title": "Actúa",
+        "text": "Presenta la candidatura, ejecuta el proyecto y comparte los resultados."
+      }
     ]
   },
   "audience": {
     "eyebrow": "Para quién",
     "title": "Para toda la sociedad civil",
     "items": [
-      { "title": "ONG pequeñas y locales", "text": "Información y socios que de otro modo cuesta encontrar." },
-      { "title": "Redes y organizaciones con experiencia", "text": "Nuevos miembros y socios para consorcios." },
-      { "title": "Donantes e instituciones", "text": "Visibilidad para las convocatorias y candidatos mejor preparados." },
-      { "title": "Voluntariado y activistas", "text": "Causas y organizaciones de toda Europa." }
+      {
+        "title": "ONG pequeñas y locales",
+        "text": "Información y socios que de otro modo cuesta encontrar."
+      },
+      {
+        "title": "Redes y organizaciones con experiencia",
+        "text": "Nuevos miembros y socios para consorcios."
+      },
+      {
+        "title": "Donantes e instituciones",
+        "text": "Visibilidad para las convocatorias y candidatos mejor preparados."
+      },
+      {
+        "title": "Voluntariado y activistas",
+        "text": "Causas y organizaciones de toda Europa."
+      }
     ]
   },
   "contact": {
@@ -71,12 +109,36 @@
     "updated": "Última actualización: 26 de noviembre de 2026",
     "back": "Volver a la página de inicio",
     "sections": [
-      { "h": "Quién gestiona este sitio", "p": "4ngo.eu está gestionado por la Asociación «Educación para la Democracia» (Prosveta za Demokratsia), n.º de identificación 208660971, calle General Skobelev 29, 5870 Dolni Dabnik, Bulgaria. Para cualquier consulta sobre datos personales, escribe a hello@4ngo.eu." },
-      { "h": "Qué datos recogemos", "p": "El sitio no tiene formularios, registro ni cuentas de usuario y no recoge datos personales. Las fuentes y las imágenes se sirven desde nuestro propio servidor, sin servicios de terceros." },
-      { "h": "Cookies", "p": "El sitio no utiliza cookies ni rastrea a los visitantes. Por eso no hay banner de consentimiento." },
-      { "h": "Datos técnicos", "p": "Como cualquier sitio web, el servidor puede registrar datos técnicos como la dirección IP, la fecha y la hora de la visita. Se usan solo para la seguridad y el funcionamiento del sitio." },
-      { "h": "Enlaces externos", "p": "Los enlaces a Facebook, Instagram, Threads y LinkedIn llevan a sitios con sus propias políticas de privacidad." },
-      { "h": "Tus derechos", "p": "De acuerdo con el Reglamento General de Protección de Datos (RGPD), tienes derecho de acceso, rectificación y supresión, así como derecho a presentar una reclamación ante una autoridad de protección de datos." }
+      {
+        "h": "Quién gestiona este sitio",
+        "p": "4ngo.eu está gestionado por la Asociación «Educación para la Democracia» (Prosveta za Demokratsia), n.º de identificación 208660971, calle General Skobelev 29, 5870 Dolni Dabnik, Bulgaria. Para cualquier consulta sobre datos personales, escribe a hello@4ngo.eu."
+      },
+      {
+        "h": "Qué datos recogemos",
+        "p": "El sitio no tiene formularios, registro ni cuentas de usuario y no recoge datos personales. Las fuentes y las imágenes se sirven desde nuestro propio servidor, sin servicios de terceros."
+      },
+      {
+        "h": "Cookies",
+        "p": "El sitio no utiliza cookies ni rastrea a los visitantes. Por eso no hay banner de consentimiento."
+      },
+      {
+        "h": "Datos técnicos",
+        "p": "Como cualquier sitio web, el servidor puede registrar datos técnicos como la dirección IP, la fecha y la hora de la visita. Se usan solo para la seguridad y el funcionamiento del sitio."
+      },
+      {
+        "h": "Enlaces externos",
+        "p": "Los enlaces a Facebook, Instagram, Threads y LinkedIn llevan a sitios con sus propias políticas de privacidad."
+      },
+      {
+        "h": "Tus derechos",
+        "p": "De acuerdo con el Reglamento General de Protección de Datos (RGPD), tienes derecho de acceso, rectificación y supresión, así como derecho a presentar una reclamación ante una autoridad de protección de datos."
+      }
     ]
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "La página que buscas no existe o se ha movido. El sitio está en construcción y algunas direcciones pueden cambiar.",
+    "home": "Ir a la página de inicio",
+    "choose": "Elige un idioma"
   }
 }

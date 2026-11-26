@@ -134,5 +134,11 @@
         "p": "Under the General Data Protection Regulation (GDPR) you have the right to access, rectify and erase data, and the right to lodge a complaint with a data protection authority."
       }
     ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved. The website is being built and some addresses may change.",
+    "home": "Go to the home page",
+    "choose": "Choose a language"
   }
 }

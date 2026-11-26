@@ -13,7 +13,12 @@
     "social": "Social media",
     "newTab": "(si apre in una nuova scheda)"
   },
-  "nav": { "about": "Chi siamo", "ecosystem": "L’ecosistema", "how": "Come funziona", "contact": "Contatti" },
+  "nav": {
+    "about": "Chi siamo",
+    "ecosystem": "L’ecosistema",
+    "how": "Come funziona",
+    "contact": "Contatti"
+  },
   "moreLanguages": "Presto anche le altre lingue ufficiali dell’UE",
   "moreLanguagesShort": "+ altre lingue presto",
   "hero": {
@@ -31,27 +36,60 @@
   "ecosystem": {
     "eyebrow": "L’ecosistema",
     "title": "Un ecosistema. Tre porte.",
-    "brand": { "verb": "Racconta.", "text": "Chi siamo, missione, notizie e advocacy.", "status": "Sei qui" },
-    "portal": { "verb": "Informa.", "text": "Un elenco delle ONG dell’UE, bandi e guide.", "status": "Prossimamente" },
-    "hub": { "verb": "Collega.", "text": "Ricerca di partner, gruppi tematici, formazione.", "status": "Prossimamente" }
+    "brand": {
+      "verb": "Racconta.",
+      "text": "Chi siamo, missione, notizie e advocacy.",
+      "status": "Sei qui"
+    },
+    "portal": {
+      "verb": "Informa.",
+      "text": "Un elenco delle ONG dell’UE, bandi e guide.",
+      "status": "Prossimamente"
+    },
+    "hub": {
+      "verb": "Collega.",
+      "text": "Ricerca di partner, gruppi tematici, formazione.",
+      "status": "Prossimamente"
+    }
   },
   "how": {
     "eyebrow": "Il percorso di un’organizzazione",
     "title": "Informarsi. Collegarsi. Agire.",
     "steps": [
-      { "title": "Informarsi", "text": "Trovate il bando e la guida giusti su portal4ngo." },
-      { "title": "Collegarsi", "text": "Cercate partner su hub4ngo e formate un consorzio." },
-      { "title": "Agire", "text": "Candidatevi, realizzate il progetto e condividete i risultati." }
+      {
+        "title": "Informarsi",
+        "text": "Trovate il bando e la guida giusti su portal4ngo."
+      },
+      {
+        "title": "Collegarsi",
+        "text": "Cercate partner su hub4ngo e formate un consorzio."
+      },
+      {
+        "title": "Agire",
+        "text": "Candidatevi, realizzate il progetto e condividete i risultati."
+      }
     ]
   },
   "audience": {
     "eyebrow": "Per chi",
     "title": "Per tutta la società civile",
     "items": [
-      { "title": "ONG piccole e locali", "text": "Informazioni e partner altrimenti difficili da trovare." },
-      { "title": "Reti e organizzazioni esperte", "text": "Nuovi membri e partner per i consorzi." },
-      { "title": "Donatori e istituzioni", "text": "Visibilità per i bandi e candidati meglio preparati." },
-      { "title": "Volontari e attivisti", "text": "Cause e organizzazioni in tutta Europa." }
+      {
+        "title": "ONG piccole e locali",
+        "text": "Informazioni e partner altrimenti difficili da trovare."
+      },
+      {
+        "title": "Reti e organizzazioni esperte",
+        "text": "Nuovi membri e partner per i consorzi."
+      },
+      {
+        "title": "Donatori e istituzioni",
+        "text": "Visibilità per i bandi e candidati meglio preparati."
+      },
+      {
+        "title": "Volontari e attivisti",
+        "text": "Cause e organizzazioni in tutta Europa."
+      }
     ]
   },
   "contact": {
@@ -71,12 +109,36 @@
     "updated": "Ultimo aggiornamento: 26 novembre 2026",
     "back": "Torna alla home page",
     "sections": [
-      { "h": "Chi gestisce questo sito", "p": "4ngo.eu è gestito dall’Associazione «Educazione per la Democrazia» (Prosveta za Demokratsia), codice identificativo 208660971, via General Skobelev 29, 5870 Dolni Dabnik, Bulgaria. Per domande sui dati personali scrivete a hello@4ngo.eu." },
-      { "h": "Quali dati raccogliamo", "p": "Il sito non ha moduli, registrazione o account utente e non raccoglie dati personali. Caratteri e immagini sono serviti dal nostro server, senza servizi di terze parti." },
-      { "h": "Cookie", "p": "Il sito non utilizza cookie e non traccia i visitatori. Per questo non c’è un banner per il consenso." },
-      { "h": "Dati tecnici", "p": "Come ogni sito web, il server può registrare dati tecnici come indirizzo IP, data e ora della visita. Sono usati solo per la sicurezza e il funzionamento del sito." },
-      { "h": "Link esterni", "p": "I link a Facebook, Instagram, Threads e LinkedIn portano a siti con le proprie informative sulla privacy." },
-      { "h": "I vostri diritti", "p": "Ai sensi del Regolamento generale sulla protezione dei dati (GDPR) avete diritto di accesso, rettifica e cancellazione, nonché il diritto di proporre reclamo a un’autorità di controllo per la protezione dei dati." }
+      {
+        "h": "Chi gestisce questo sito",
+        "p": "4ngo.eu è gestito dall’Associazione «Educazione per la Democrazia» (Prosveta za Demokratsia), codice identificativo 208660971, via General Skobelev 29, 5870 Dolni Dabnik, Bulgaria. Per domande sui dati personali scrivete a hello@4ngo.eu."
+      },
+      {
+        "h": "Quali dati raccogliamo",
+        "p": "Il sito non ha moduli, registrazione o account utente e non raccoglie dati personali. Caratteri e immagini sono serviti dal nostro server, senza servizi di terze parti."
+      },
+      {
+        "h": "Cookie",
+        "p": "Il sito non utilizza cookie e non traccia i visitatori. Per questo non c’è un banner per il consenso."
+      },
+      {
+        "h": "Dati tecnici",
+        "p": "Come ogni sito web, il server può registrare dati tecnici come indirizzo IP, data e ora della visita. Sono usati solo per la sicurezza e il funzionamento del sito."
+      },
+      {
+        "h": "Link esterni",
+        "p": "I link a Facebook, Instagram, Threads e LinkedIn portano a siti con le proprie informative sulla privacy."
+      },
+      {
+        "h": "I vostri diritti",
+        "p": "Ai sensi del Regolamento generale sulla protezione dei dati (GDPR) avete diritto di accesso, rettifica e cancellazione, nonché il diritto di proporre reclamo a un’autorità di controllo per la protezione dei dati."
+      }
     ]
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cercate non esiste o è stata spostata. Il sito è in costruzione e alcuni indirizzi possono cambiare.",
+    "home": "Vai alla home page",
+    "choose": "Scegli la lingua"
   }
 }

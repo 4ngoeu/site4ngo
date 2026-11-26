@@ -296,6 +296,72 @@ function rootRedirect() {
 `;
 }
 
+function notFound() {
+  // 404.html се показва на всеки липсващ адрес, затова пътищата са от корена на домейна.
+  R = '/';
+  const t = T[DEFAULT_LANG];
+  const data = Object.fromEntries(LANGS.map((l) => [l, { ...T[l].notFound, label: T[l].label }]));
+  const langs = LANGS.map((l) => `<li><a href="/${l}/" hreflang="${l}" lang="${l}"><span class="code">${l.toUpperCase()}</span>${esc(T[l].label)}</a></li>`).join('\n        ');
+  return `<!doctype html>
+<html lang="${t.lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>404 – ${esc(t.notFound.title)} – 4ngo</title>
+  <meta name="theme-color" content="#1B2B5E">
+  <link rel="icon" href="/assets/img/4ngo-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/4ngo-favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="/assets/css/fonts.css?v=${V_FONTS}">
+  <link rel="stylesheet" href="/assets/css/style.css?v=${V_STYLE}">
+</head>
+<body class="nf-page">
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="/" data-home><img src="/assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></a>
+  </div>
+</header>
+<main id="main" class="nf">
+  <div class="wrap nf-inner">
+    <svg class="nf-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect x="4" y="4" width="112" height="112" rx="28" fill="#1B2B5E"/><g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"><line x1="72" y1="26" x2="30" y2="74"/><line x1="30" y1="74" x2="92" y2="74"/><line x1="72" y1="26" x2="72" y2="96" stroke-dasharray="2 14"/></g><g fill="#FFFFFF"><circle cx="72" cy="26" r="10"/><circle cx="30" cy="74" r="10"/><circle cx="92" cy="74" r="10"/></g><circle cx="72" cy="96" r="9" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 4"/><circle cx="72" cy="74" r="12" fill="#F2994A"/></svg>
+    <p class="nf-code">404</p>
+    <h1 data-k="title">${esc(t.notFound.title)}</h1>
+    <p class="nf-text" data-k="text">${esc(t.notFound.text)}</p>
+    <a class="btn btn-navy" href="/${t.lang}/" data-home data-k="home">${esc(t.notFound.home)}</a>
+    <p class="nf-choose" data-k="choose">${esc(t.notFound.choose)}</p>
+    <ul class="nf-langs">
+        ${langs}
+    </ul>
+  </div>
+</main>
+<script>
+(function () {
+  var data = ${JSON.stringify(data)};
+  var pick = null;
+  var m = location.pathname.match(/^\\/([a-z]{2})(\\/|$)/);
+  if (m && data[m[1]]) pick = m[1];
+  if (!pick) {
+    var prefs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < prefs.length && !pick; i++) {
+      var c = String(prefs[i]).toLowerCase().split('-')[0];
+      if (data[c]) pick = c;
+    }
+  }
+  pick = pick || '${DEFAULT_LANG}';
+  var d = data[pick];
+  document.documentElement.lang = pick;
+  document.title = '404 – ' + d.title + ' – 4ngo';
+  document.querySelectorAll('[data-k]').forEach(function (el) { el.textContent = d[el.getAttribute('data-k')]; });
+  document.querySelectorAll('[data-home]').forEach(function (el) { el.href = '/' + pick + '/'; });
+  var cur = document.querySelector('.nf-langs a[hreflang="' + pick + '"]');
+  if (cur) cur.setAttribute('aria-current', 'true');
+})();
+</script>
+</body>
+</html>
+`;
+}
+
 function write(path, html) {
   mkdirSync(path.split('/').slice(0, -1).join('/') || '.', { recursive: true });
   writeFileSync(path, html);
@@ -310,6 +376,7 @@ for (const l of LANGS) {
 }
 R = './';
 write('index.html', rootRedirect());
+write('404.html', notFound());
 write('.nojekyll', '');
 
 const urls = LANGS.flatMap((l) => [pagePath(l, 'home'), pagePath(l, 'privacy')]);
