@@ -1,0 +1,137 @@
+{
+  "lang": "fr",
+  "label": "Français",
+  "meta": {
+    "title": "4ngo – relier la société civile en Europe",
+    "description": "4ngo est un écosystème européen qui aide les organisations non gouvernementales à trouver des informations, des partenaires et des possibilités de projets communs.",
+    "privacyTitle": "Confidentialité et cookies – 4ngo"
+  },
+  "a11y": {
+    "skip": "Aller au contenu",
+    "menu": "Menu principal",
+    "language": "Choisir la langue",
+    "social": "Réseaux sociaux",
+    "newTab": "(s’ouvre dans un nouvel onglet)"
+  },
+  "nav": {
+    "about": "À propos",
+    "ecosystem": "L’écosystème",
+    "how": "Fonctionnement",
+    "contact": "Contact"
+  },
+  "moreLanguages": "Les autres langues officielles de l’UE arrivent bientôt",
+  "moreLanguagesShort": "+ d’autres langues bientôt",
+  "hero": {
+    "badge": "La plateforme est en cours de construction",
+    "title": "Relier la société civile en Europe",
+    "text": "4ngo est un écosystème européen qui aide les organisations non gouvernementales à trouver des informations, des partenaires et des possibilités de projets communs.",
+    "ctaPrimary": "Suivez-nous",
+    "ctaSecondary": "Comment ça marchera"
+  },
+  "about": {
+    "eyebrow": "Pourquoi 4ngo",
+    "title": "Beaucoup d’organisations, des causes communes, rarement ensemble",
+    "text": "L’information est dispersée sur des dizaines de sites et de langues. Les partenaires d’autres pays se trouvent surtout grâce aux contacts personnels. Les petites organisations locales restent en dehors des réseaux européens. 4ngo réunit tout cela en un seul endroit."
+  },
+  "ecosystem": {
+    "eyebrow": "L’écosystème",
+    "title": "Un écosystème. Trois portes.",
+    "brand": {
+      "verb": "Raconte.",
+      "text": "Qui nous sommes, notre mission, actualités et plaidoyer.",
+      "status": "Vous êtes ici"
+    },
+    "portal": {
+      "verb": "Informe.",
+      "text": "Un annuaire des ONG de l’UE, des appels et des guides.",
+      "status": "Bientôt disponible"
+    },
+    "hub": {
+      "verb": "Relie.",
+      "text": "Recherche de partenaires, groupes thématiques, formations.",
+      "status": "Bientôt disponible"
+    }
+  },
+  "how": {
+    "eyebrow": "Le parcours d’une organisation",
+    "title": "S’informer. Se connecter. Agir.",
+    "steps": [
+      {
+        "title": "S’informer",
+        "text": "Trouvez l’appel et le guide adaptés sur portal4ngo."
+      },
+      {
+        "title": "Se connecter",
+        "text": "Cherchez des partenaires sur hub4ngo et formez un consortium."
+      },
+      {
+        "title": "Agir",
+        "text": "Candidatez, menez le projet et partagez les résultats."
+      }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Pour qui",
+    "title": "Pour toute la société civile",
+    "items": [
+      {
+        "title": "Petites ONG locales",
+        "text": "Des informations et des partenaires difficiles à trouver autrement."
+      },
+      {
+        "title": "Réseaux et organisations expérimentées",
+        "text": "De nouveaux membres et partenaires pour vos consortiums."
+      },
+      {
+        "title": "Donateurs et institutions",
+        "text": "Plus de visibilité pour les appels et des candidats mieux préparés."
+      },
+      {
+        "title": "Bénévoles et militants",
+        "text": "Des causes et des organisations dans toute l’Europe."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Suivez la croissance de 4ngo",
+    "text": "La plateforme est en cours de construction. Suivez-nous pour savoir en premier quand portal4ngo et hub4ngo ouvriront leurs portes.",
+    "email": "Écrivez-nous"
+  },
+  "footer": {
+    "initiative": "4ngo est une initiative de",
+    "org": "l’Association « Éducation pour la démocratie »",
+    "country": "Bulgarie",
+    "privacy": "Confidentialité et cookies"
+  },
+  "privacy": {
+    "title": "Confidentialité et cookies",
+    "updated": "Dernière mise à jour : 26 novembre 2026",
+    "back": "Retour à l’accueil",
+    "sections": [
+      {
+        "h": "Qui gère ce site",
+        "p": "Le site 4ngo.eu est géré par l’Association « Éducation pour la démocratie » (Prosveta za Demokratsia), n° d’identification 208660971, 29 rue General Skobelev, 5870 Dolni Dabnik, Bulgarie. Pour toute question sur les données personnelles, écrivez à hello@4ngo.eu."
+      },
+      {
+        "h": "Quelles données nous collectons",
+        "p": "Le site n’a ni formulaire, ni inscription, ni compte utilisateur et ne collecte pas de données personnelles. Les polices et les images sont servies depuis notre propre serveur, sans service tiers."
+      },
+      {
+        "h": "Cookies",
+        "p": "Le site n’utilise pas de cookies et ne suit pas les visiteurs. C’est pourquoi il n’y a pas de bandeau de consentement."
+      },
+      {
+        "h": "Données techniques",
+        "p": "Comme tout site web, le serveur peut enregistrer des données techniques telles que l’adresse IP, la date et l’heure de la visite. Elles servent uniquement à la sécurité et au fonctionnement du site."
+      },
+      {
+        "h": "Liens externes",
+        "p": "Les liens vers Facebook, Instagram, Threads et LinkedIn mènent à des sites ayant leurs propres politiques de confidentialité."
+      },
+      {
+        "h": "Vos droits",
+        "p": "Conformément au Règlement général sur la protection des données (RGPD), vous disposez d’un droit d’accès, de rectification et d’effacement, ainsi que du droit d’introduire une réclamation auprès d’une autorité de protection des données."
+      }
+    ]
+  }
+}

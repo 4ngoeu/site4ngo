@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4ngo – connecting civil society in Europe</title>
+  <meta name="description" content="4ngo is a European ecosystem that helps non-governmental organisations find information, partners and opportunities for joint projects.">
+  <link rel="canonical" href="https://4ngo.eu/">
+  <link rel="alternate" hreflang="en" href="https://4ngo.eu/en/">
+  <link rel="alternate" hreflang="fr" href="https://4ngo.eu/fr/">
+  <link rel="alternate" hreflang="de" href="https://4ngo.eu/de/">
+  <link rel="alternate" hreflang="bg" href="https://4ngo.eu/bg/">
+  <link rel="alternate" hreflang="x-default" href="https://4ngo.eu/">
+  <link rel="icon" href="/assets/img/4ngo-favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var supported = ["en","fr","de","bg"];
+      var prefs = navigator.languages || [navigator.language || ''];
+      var pick = 'en';
+      for (var i = 0; i < prefs.length; i++) {
+        var code = String(prefs[i]).toLowerCase().split('-')[0];
+        if (supported.indexOf(code) !== -1) { pick = code; break; }
+      }
+      location.replace('/' + pick + '/');
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript>
+  <style>body{font-family:system-ui,sans-serif;background:#F6F7FA;color:#1B2B5E;display:grid;place-items:center;min-height:100vh;margin:0}ul{list-style:none;padding:0;display:flex;gap:16px}a{color:#1B2B5E;font-weight:600}</style>
+</head>
+<body>
+  <ul><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/bg/" hreflang="bg" lang="bg">Български</a></li></ul>
+</body>
+</html>

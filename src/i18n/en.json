@@ -1,0 +1,81 @@
+{
+  "lang": "en",
+  "label": "English",
+  "meta": {
+    "title": "4ngo – connecting civil society in Europe",
+    "description": "4ngo is a European ecosystem that helps non-governmental organisations find information, partners and opportunities for joint projects.",
+    "privacyTitle": "Privacy and cookies – 4ngo"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Main menu",
+    "language": "Choose language",
+    "social": "Social media",
+    "newTab": "(opens in a new tab)"
+  },
+  "nav": { "about": "About", "ecosystem": "Ecosystem", "how": "How it works", "contact": "Contact" },
+  "moreLanguages": "The other official EU languages are coming soon",
+  "moreLanguagesShort": "+ more languages soon",
+  "hero": {
+    "badge": "Work on the platform is in progress",
+    "title": "Connecting civil society in Europe",
+    "text": "4ngo is a European ecosystem that helps non-governmental organisations find information, partners and opportunities for joint projects.",
+    "ctaPrimary": "Follow us",
+    "ctaSecondary": "How it will work"
+  },
+  "about": {
+    "eyebrow": "Why 4ngo",
+    "title": "Many organisations, shared causes, rarely together",
+    "text": "Information is scattered across dozens of websites and languages. Partners from other countries are found mostly through personal contacts. Small and local organisations stay outside European networks. 4ngo brings all of this together in one place."
+  },
+  "ecosystem": {
+    "eyebrow": "The ecosystem",
+    "title": "One ecosystem. Three doors.",
+    "brand": { "verb": "Tells the story.", "text": "Who we are, our mission, news and advocacy.", "status": "You are here" },
+    "portal": { "verb": "Informs.", "text": "A directory of NGOs in the EU, calls and guides.", "status": "Coming soon" },
+    "hub": { "verb": "Connects.", "text": "Partner search, thematic groups, training.", "status": "Coming soon" }
+  },
+  "how": {
+    "eyebrow": "An organisation's journey",
+    "title": "Learn. Connect. Act.",
+    "steps": [
+      { "title": "Learn", "text": "Find the right call and guide on portal4ngo." },
+      { "title": "Connect", "text": "Look for partners on hub4ngo and build a consortium." },
+      { "title": "Act", "text": "Apply, run the project and share the results." }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Who it is for",
+    "title": "For the whole of civil society",
+    "items": [
+      { "title": "Small and local NGOs", "text": "Information and partners that are otherwise hard to find." },
+      { "title": "Networks and experienced organisations", "text": "New members and partners for consortia." },
+      { "title": "Donors and institutions", "text": "Visibility for calls and better-prepared applicants." },
+      { "title": "Volunteers and activists", "text": "Causes and organisations across Europe." }
+    ]
+  },
+  "contact": {
+    "title": "Follow 4ngo as it grows",
+    "text": "The platform is being built right now. Follow us to be the first to know when portal4ngo and hub4ngo open their doors.",
+    "email": "Write to us"
+  },
+  "footer": {
+    "initiative": "4ngo is an initiative of the",
+    "org": "Association “Education for Democracy”",
+    "country": "Bulgaria",
+    "privacy": "Privacy and cookies"
+  },
+  "privacy": {
+    "title": "Privacy and cookies",
+    "updated": "Last updated: 26 November 2026",
+    "back": "Back to the home page",
+    "sections": [
+      { "h": "Who runs this website", "p": "4ngo.eu is run by the Association “Education for Democracy” (Prosveta za Demokratsia), UIC 208660971, 29 General Skobelev Str., 5870 Dolni Dabnik, Bulgaria. For questions about personal data, write to hello@4ngo.eu." },
+      { "h": "What data we collect", "p": "The website has no forms, registration or user accounts and does not collect personal data. Fonts and images are served from our own server, without third-party services." },
+      { "h": "Cookies", "p": "The website does not use cookies and does not track visitors. That is why there is no consent banner." },
+      { "h": "Technical data", "p": "Like any website, the server may record technical data such as IP address, date and time of a visit. This is used only for the security and operation of the website." },
+      { "h": "External links", "p": "Links to Facebook, Instagram, Threads and LinkedIn lead to websites with their own privacy policies." },
+      { "h": "Your rights", "p": "Under the General Data Protection Regulation (GDPR) you have the right to access, rectify and erase data, and the right to lodge a complaint with a data protection authority." }
+    ]
+  }
+}
