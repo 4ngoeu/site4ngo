@@ -3,8 +3,10 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 
 const SITE = 'https://4ngo.eu';
-// Редът на езиците в превключвателя. Нов език: добавете src/i18n/<код>.json и кода тук.
-const LANGS = ['en', 'fr', 'de', 'bg'];
+// Редът е протоколният ред на ЕС (по името на езика на самия него):
+// bg, es, cs, da, de, et, el, en, fr, ga, hr, it, lv, lt, hu, mt, nl, pl, pt, ro, sk, sl, fi, sv.
+// Нов език: добавете src/i18n/<код>.json и вмъкнете кода на правилното място тук.
+const LANGS = ['bg', 'es', 'de', 'en', 'fr', 'it', 'pt'];
 const DEFAULT_LANG = 'en';
 
 const T = Object.fromEntries(
@@ -97,7 +99,7 @@ function header(t, page) {
 <a class="skip" href="#main">${esc(t.a11y.skip)}</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="logo" href="${home}"><img src="${R}assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></a>
+    <a class="logo" href="${home}"><picture><source media="(max-width: 420px)" srcset="${R}assets/img/4ngo-mark.svg"><img src="${R}assets/img/4ngo-lockup.svg" alt="4ngo" width="111" height="40"></picture></a>
     ${menu}
     <nav aria-label="${esc(t.a11y.language)}"><ul class="lang">${langs}<li class="more" title="${esc(t.moreLanguages)}">${esc(t.moreLanguagesShort)}</li></ul></nav>
   </div>

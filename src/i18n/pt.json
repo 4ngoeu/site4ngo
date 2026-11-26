@@ -1,0 +1,82 @@
+{
+  "lang": "pt",
+  "label": "Português",
+  "meta": {
+    "title": "4ngo – ligamos a sociedade civil na Europa",
+    "description": "A 4ngo é um ecossistema europeu que ajuda as organizações não governamentais a encontrar informação, parceiros e oportunidades para projetos conjuntos.",
+    "privacyTitle": "Privacidade e cookies – 4ngo"
+  },
+  "a11y": {
+    "skip": "Ir para o conteúdo",
+    "menu": "Menu principal",
+    "language": "Escolher idioma",
+    "social": "Redes sociais",
+    "newTab": "(abre num novo separador)"
+  },
+  "nav": { "about": "Quem somos", "ecosystem": "O ecossistema", "how": "Como funciona", "contact": "Contacto" },
+  "moreLanguages": "Em breve, as restantes línguas oficiais da UE",
+  "moreLanguagesShort": "+ mais línguas em breve",
+  "hero": {
+    "badge": "A plataforma está em construção",
+    "title": "Ligamos a sociedade civil na Europa",
+    "text": "A 4ngo é um ecossistema europeu que ajuda as organizações não governamentais a encontrar informação, parceiros e oportunidades para projetos conjuntos.",
+    "ctaPrimary": "Siga-nos",
+    "ctaSecondary": "Como vai funcionar"
+  },
+  "about": {
+    "eyebrow": "Porquê a 4ngo",
+    "title": "Muitas organizações, causas comuns, raramente juntas",
+    "text": "A informação está dispersa por dezenas de sites e línguas. Os parceiros de outros países encontram-se sobretudo através de contactos pessoais. As organizações pequenas e locais ficam fora das redes europeias. A 4ngo reúne tudo isto num só lugar."
+  },
+  "ecosystem": {
+    "eyebrow": "O ecossistema",
+    "title": "Um ecossistema. Três portas.",
+    "brand": { "verb": "Conta.", "text": "Quem somos, missão, notícias e advocacia.", "status": "Está aqui" },
+    "portal": { "verb": "Informa.", "text": "Um diretório de ONG da UE, convites e guias.", "status": "Brevemente" },
+    "hub": { "verb": "Liga.", "text": "Procura de parceiros, grupos temáticos, formação.", "status": "Brevemente" }
+  },
+  "how": {
+    "eyebrow": "O percurso de uma organização",
+    "title": "Informar-se. Ligar-se. Agir.",
+    "steps": [
+      { "title": "Informar-se", "text": "Encontre o convite e o guia certos no portal4ngo." },
+      { "title": "Ligar-se", "text": "Procure parceiros no hub4ngo e forme um consórcio." },
+      { "title": "Agir", "text": "Candidate-se, execute o projeto e partilhe os resultados." }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Para quem",
+    "title": "Para toda a sociedade civil",
+    "items": [
+      { "title": "ONG pequenas e locais", "text": "Informação e parceiros que de outra forma são difíceis de encontrar." },
+      { "title": "Redes e organizações experientes", "text": "Novos membros e parceiros para consórcios." },
+      { "title": "Doadores e instituições", "text": "Visibilidade para os convites e candidatos mais bem preparados." },
+      { "title": "Voluntários e ativistas", "text": "Causas e organizações em toda a Europa." }
+    ]
+  },
+  "contact": {
+    "title": "Acompanhe o crescimento da 4ngo",
+    "text": "A plataforma está a ser construída neste momento. Siga-nos para saber em primeira mão quando o portal4ngo e o hub4ngo abrirem as portas.",
+    "email": "Escreva-nos"
+  },
+  "footer": {
+    "initiative": "A 4ngo é uma iniciativa da",
+    "org": "Associação «Educação para a Democracia»",
+    "country": "Bulgária",
+    "privacy": "Privacidade e cookies",
+    "rights": "© 2026 Associação «Educação para a Democracia». Todos os direitos reservados."
+  },
+  "privacy": {
+    "title": "Privacidade e cookies",
+    "updated": "Última atualização: 26 de novembro de 2026",
+    "back": "Voltar à página inicial",
+    "sections": [
+      { "h": "Quem gere este site", "p": "O 4ngo.eu é gerido pela Associação «Educação para a Democracia» (Prosveta za Demokratsia), n.º de identificação 208660971, Rua General Skobelev 29, 5870 Dolni Dabnik, Bulgária. Para questões sobre dados pessoais, escreva para hello@4ngo.eu." },
+      { "h": "Que dados recolhemos", "p": "O site não tem formulários, registo nem contas de utilizador e não recolhe dados pessoais. Os tipos de letra e as imagens são servidos a partir do nosso próprio servidor, sem serviços de terceiros." },
+      { "h": "Cookies", "p": "O site não utiliza cookies nem segue os visitantes. Por isso não existe faixa de consentimento." },
+      { "h": "Dados técnicos", "p": "Como qualquer site, o servidor pode registar dados técnicos como o endereço IP, a data e a hora da visita. Estes dados são usados apenas para a segurança e o funcionamento do site." },
+      { "h": "Ligações externas", "p": "As ligações para o Facebook, Instagram, Threads e LinkedIn levam a sites com as suas próprias políticas de privacidade." },
+      { "h": "Os seus direitos", "p": "Nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD), tem direito de acesso, retificação e apagamento, bem como o direito de apresentar reclamação a uma autoridade de proteção de dados." }
+    ]
+  }
+}
