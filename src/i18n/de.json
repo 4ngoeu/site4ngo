@@ -13,7 +13,12 @@
     "social": "Soziale Medien",
     "newTab": "(öffnet in einem neuen Tab)"
   },
-  "nav": { "about": "Über uns", "ecosystem": "Ökosystem", "how": "So funktioniert’s", "contact": "Kontakt" },
+  "nav": {
+    "about": "Über uns",
+    "ecosystem": "Ökosystem",
+    "how": "So funktioniert’s",
+    "contact": "Kontakt"
+  },
   "moreLanguages": "Die weiteren Amtssprachen der EU folgen in Kürze",
   "moreLanguagesShort": "+ weitere Sprachen bald",
   "hero": {
@@ -31,27 +36,60 @@
   "ecosystem": {
     "eyebrow": "Das Ökosystem",
     "title": "Ein Ökosystem. Drei Türen.",
-    "brand": { "verb": "Erzählt.", "text": "Wer wir sind, Mission, Neuigkeiten und Interessenvertretung.", "status": "Sie sind hier" },
-    "portal": { "verb": "Informiert.", "text": "Ein Verzeichnis der NGOs in der EU, Ausschreibungen und Leitfäden.", "status": "Demnächst" },
-    "hub": { "verb": "Verbindet.", "text": "Partnersuche, Themengruppen, Weiterbildung.", "status": "Demnächst" }
+    "brand": {
+      "verb": "Erzählt.",
+      "text": "Wer wir sind, Mission, Neuigkeiten und Interessenvertretung.",
+      "status": "Sie sind hier"
+    },
+    "portal": {
+      "verb": "Informiert.",
+      "text": "Ein Verzeichnis der NGOs in der EU, Ausschreibungen und Leitfäden.",
+      "status": "Demnächst"
+    },
+    "hub": {
+      "verb": "Verbindet.",
+      "text": "Partnersuche, Themengruppen, Weiterbildung.",
+      "status": "Demnächst"
+    }
   },
   "how": {
     "eyebrow": "Der Weg einer Organisation",
     "title": "Informieren. Vernetzen. Handeln.",
     "steps": [
-      { "title": "Informieren", "text": "Finden Sie die passende Ausschreibung und den Leitfaden auf portal4ngo." },
-      { "title": "Vernetzen", "text": "Suchen Sie Partner auf hub4ngo und bilden Sie ein Konsortium." },
-      { "title": "Handeln", "text": "Bewerben Sie sich, setzen Sie das Projekt um und teilen Sie die Ergebnisse." }
+      {
+        "title": "Informieren",
+        "text": "Finden Sie die passende Ausschreibung und den Leitfaden auf portal4ngo."
+      },
+      {
+        "title": "Vernetzen",
+        "text": "Suchen Sie Partner auf hub4ngo und bilden Sie ein Konsortium."
+      },
+      {
+        "title": "Handeln",
+        "text": "Bewerben Sie sich, setzen Sie das Projekt um und teilen Sie die Ergebnisse."
+      }
     ]
   },
   "audience": {
     "eyebrow": "Für wen",
     "title": "Für die gesamte Zivilgesellschaft",
     "items": [
-      { "title": "Kleine und lokale NGOs", "text": "Informationen und Partner, die sonst schwer zu finden sind." },
-      { "title": "Netzwerke und erfahrene Organisationen", "text": "Neue Mitglieder und Partner für Konsortien." },
-      { "title": "Geldgeber und Institutionen", "text": "Sichtbarkeit für Ausschreibungen und besser vorbereitete Bewerber." },
-      { "title": "Freiwillige und Aktive", "text": "Anliegen und Organisationen in ganz Europa." }
+      {
+        "title": "Kleine und lokale NGOs",
+        "text": "Informationen und Partner, die sonst schwer zu finden sind."
+      },
+      {
+        "title": "Netzwerke und erfahrene Organisationen",
+        "text": "Neue Mitglieder und Partner für Konsortien."
+      },
+      {
+        "title": "Geldgeber und Institutionen",
+        "text": "Sichtbarkeit für Ausschreibungen und besser vorbereitete Bewerber."
+      },
+      {
+        "title": "Freiwillige und Aktive",
+        "text": "Anliegen und Organisationen in ganz Europa."
+      }
     ]
   },
   "contact": {
@@ -63,19 +101,38 @@
     "initiative": "4ngo ist eine Initiative des Vereins",
     "org": "„Bildung für Demokratie“",
     "country": "Bulgarien",
-    "privacy": "Datenschutz und Cookies"
+    "privacy": "Datenschutz und Cookies",
+    "rights": "© 2026 Verein „Bildung für Demokratie“. Alle Rechte vorbehalten."
   },
   "privacy": {
     "title": "Datenschutz und Cookies",
     "updated": "Zuletzt aktualisiert: 26.11.2026",
     "back": "Zur Startseite",
     "sections": [
-      { "h": "Wer betreibt diese Website", "p": "4ngo.eu wird vom Verein „Bildung für Demokratie“ (Prosveta za Demokratsia) betrieben, Registernummer 208660971, General-Skobelev-Str. 29, 5870 Dolni Dabnik, Bulgarien. Bei Fragen zu personenbezogenen Daten schreiben Sie an hello@4ngo.eu." },
-      { "h": "Welche Daten wir erheben", "p": "Die Website hat keine Formulare, keine Registrierung und keine Benutzerkonten und erhebt keine personenbezogenen Daten. Schriften und Bilder werden von unserem eigenen Server geladen, ohne Dienste Dritter." },
-      { "h": "Cookies", "p": "Die Website verwendet keine Cookies und verfolgt keine Besucher. Deshalb gibt es kein Einwilligungsbanner." },
-      { "h": "Technische Daten", "p": "Wie jede Website kann der Server technische Daten wie IP-Adresse, Datum und Uhrzeit eines Besuchs speichern. Diese dienen nur der Sicherheit und dem Betrieb der Website." },
-      { "h": "Externe Links", "p": "Links zu Facebook, Instagram, Threads und LinkedIn führen zu Websites mit eigenen Datenschutzrichtlinien." },
-      { "h": "Ihre Rechte", "p": "Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung und Löschung sowie das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde." }
+      {
+        "h": "Wer betreibt diese Website",
+        "p": "4ngo.eu wird vom Verein „Bildung für Demokratie“ (Prosveta za Demokratsia) betrieben, Registernummer 208660971, General-Skobelev-Str. 29, 5870 Dolni Dabnik, Bulgarien. Bei Fragen zu personenbezogenen Daten schreiben Sie an hello@4ngo.eu."
+      },
+      {
+        "h": "Welche Daten wir erheben",
+        "p": "Die Website hat keine Formulare, keine Registrierung und keine Benutzerkonten und erhebt keine personenbezogenen Daten. Schriften und Bilder werden von unserem eigenen Server geladen, ohne Dienste Dritter."
+      },
+      {
+        "h": "Cookies",
+        "p": "Die Website verwendet keine Cookies und verfolgt keine Besucher. Deshalb gibt es kein Einwilligungsbanner."
+      },
+      {
+        "h": "Technische Daten",
+        "p": "Wie jede Website kann der Server technische Daten wie IP-Adresse, Datum und Uhrzeit eines Besuchs speichern. Diese dienen nur der Sicherheit und dem Betrieb der Website."
+      },
+      {
+        "h": "Externe Links",
+        "p": "Links zu Facebook, Instagram, Threads und LinkedIn führen zu Websites mit eigenen Datenschutzrichtlinien."
+      },
+      {
+        "h": "Ihre Rechte",
+        "p": "Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung und Löschung sowie das Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde."
+      }
     ]
   }
 }

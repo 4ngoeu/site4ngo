@@ -36,6 +36,7 @@ const SOCIAL = [
   { id: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/company/4ngoeu/' },
 ];
 const EMAIL = 'hello@4ngo.eu';
+const ORG_URL = 'https://www.dei4bg.org/';
 
 const HERO_ART = `<svg class="hero-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect x="4" y="4" width="112" height="112" rx="28" fill="rgba(255,255,255,.06)"/><g stroke="rgba(255,255,255,.35)" stroke-width="4" stroke-linecap="round"><line x1="72" y1="26" x2="30" y2="74"/><line x1="30" y1="74" x2="92" y2="74"/><line x1="72" y1="26" x2="72" y2="96"/></g><g fill="rgba(255,255,255,.5)"><circle cx="72" cy="26" r="7"/><circle cx="30" cy="74" r="7"/><circle cx="92" cy="74" r="7"/><circle cx="72" cy="96" r="7"/></g><circle cx="72" cy="74" r="9" fill="#F2994A"/></svg>`;
 
@@ -112,14 +113,15 @@ function footer(t) {
   <div class="wrap foot">
     <div class="initiative">
       <img src="${R}assets/img/prosveta-navy.png" alt="" width="44" height="48">
-      <p>${esc(t.footer.initiative)} <b>${esc(t.footer.org)}</b>, ${esc(t.footer.country)}</p>
+      <p>${esc(t.footer.initiative)} <a class="org" href="${ORG_URL}" target="_blank" rel="noopener"><b>${esc(t.footer.org)}</b><span class="sr-only"> ${esc(t.a11y.newTab)}</span></a>, ${esc(t.footer.country)}</p>
     </div>
     <div class="foot-links">
       <ul class="foot-social" aria-label="${esc(t.a11y.social)}">${social}</ul>
       <a href="${R}${t.lang}/privacy/">${esc(t.footer.privacy)}</a>
-      <span>© 2026 4ngo</span>
+      
     </div>
   </div>
+  <div class="wrap rights"><p><a href="${ORG_URL}" target="_blank" rel="noopener">${esc(t.footer.rights)}<span class="sr-only"> ${esc(t.a11y.newTab)}</span></a></p></div>
 </footer>
 </body>
 </html>
